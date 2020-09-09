@@ -1,0 +1,102 @@
+main{
+    //TODO: si decido que voy a trabajar con un solo HTML
+    // para manejar todo el DOM Deberia encapsular estas secciones para manejarlas por bloque por el momento considero que lo mejor seria que dentro de un section meter dos bloques de divs
+    // Favorites
+    .favorite{
+        display: none;
+        .favorite-section{
+            // height: 280px;
+            padding-top: 120px;
+            padding-bottom: 50px;
+            .favorite-container{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                img{
+                    width: 28px;
+                    height: 21px;
+                }
+                h2{
+                    color: $color-principal;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .result-favorite-section{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            .result-container{
+                display: flex;
+                flex-flow: row wrap;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                
+                justify-content: center;
+                /* width: 1280px; */
+                .item-favorite{
+                    position: relative;
+                    img{
+                        width: 156px;
+                        height: 120px;
+                        display: block;
+                    }
+                    .overlay-favorite{
+                        display: none;
+                        position: absolute;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        background: $color-principal;
+                        opacity: 0;
+                        width: 100%;
+                        font-size: 20px;
+                        bottom: 0;
+                        color: $color-white;
+                        height: 100%;
+                        .icon-overlay-favorite{
+                            display: flex;
+                            justify-content: flex-end;
+                            img{
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 6px;
+                                background:  $color-white;
+                                opacity: 0.7;
+                                margin: 5px;
+                            }
+                        }
+                        .text-overlay-favorite{
+                            margin: 0 0 5px 10px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .description-empty-favorite-section{
+            height: 400px;
+            .description-empty-favorite-container{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                img{
+                    width: 150px;
+                    height: 151px;
+                }
+                h2{
+                    color: $color-secondary;
+                    font-size: 22px;
+                    line-height: 33px;
+                    width: 320px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
