@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="./assets/logo-mobile.svg" type="image/x-icon">
 </head>
 <body>
-    <!-- header -->
     <header id="navbar">
-        <!-- icon -->
         <div class="menu-bar">
             <a href="./index.html" class="logo" id="logo"></a>
             <div class="btn-menu" id="btn-menu">
@@ -19,33 +17,29 @@
                 <img id="close" src="./assets/close.svg" alt="Close">
             </div>
         </div>
-        <!-- <div class="search-nav" id="searchNavTop">
-            <input type="text" placeholder="Busca GIFOS y más" id="gifTitleNav">
-            <a class="img-search-nav" id="searchNav"><img src="./assets/icon-search.svg" alt="Buscar"></a>
-        </div> -->
-        <!-- Menu de navegación -->
         <nav class="full-menu">
             <ul>
                 <li><a href="#" id="changeMode">MODO NOCTURNO</a></li>
-                <span></span>
+                <li class="span"></li>
                 <li><a href="" id="btnfavorite">FAVORITOS</a></li>
-                <span></span>
+                <li class="span"></li>
                 <li><a href="" id="btnmisGifos">MIS GIFOS</a></li>
-                <span></span>
-                <a href="" class="add" id="btncreateGifos" ></a>
+                <li class="span"></li>
             </ul>
+             <a href="" class="add" id="btncreateGifos" ></a>
         </nav>
     </header>
 
     <main>
-        <!-- Principal con imagen / barra de busqueda -->
         <section class="principal-section" id="principal_section">
             <div class="principal-container" id="principal-container">
                 <h1>Inspírate, busca, guarda y crea los mejores <span>gifos</span></h1>
                 <img src="./assets/ilustra_header.svg" alt="Bienvenido a GIFOS">
                 <div class="principal-container-input" id="principal-container-input">
                     <input type="text" placeholder="Busca GIFOS y más" id="gifTitle">
-                    <a class="img-search" id="search"><img id="closeSearch" src="./assets/icon-search.svg" alt="Buscar"></a>
+                    <a class="img-search" id="search">
+                        <img id="closeSearch" src="./assets/icon-search.svg" alt="Buscar">
+                    </a>
                 </div>
                         <div class="suggestion-container">
                             <hr class="hr">
@@ -56,25 +50,19 @@
             
         </section>
 
-        <!-- Trending Section -->
         <Section class="trending-section" id="trending_section">
             <div class="trending-container">
-                <h2>Trending</h2>
-                <!-- <p>Lorem ipsum dolor sit amet.</p> -->
             </div>
         </Section>
 
-        <!-- Result Search -->
         <section class="result-search-section" id="result_search_section">
             <div class="result-search-title">
                 <h2 class="search-title"></h2>
             </div>
             <div class="result-search-container" id="results">
             </div>
-            <!-- <button class="btn" id="btn" onclick="limitFunction()">VER MÁS</button> -->
         </section>
 
-        <!-- Empty Seacrh -->
         <section class="search-empty-section" id="search_empty">
             <section class="search-empty">
                 <div class="search-empty-container">
@@ -89,7 +77,6 @@
             </section>
         </section>
 
-        <!-- Favorites -->
         <section class="favorite" id="favorite">
             <section class="favorite-section">
                 <div class="favorite-container">
@@ -110,7 +97,6 @@
             </section>
         </section>
 
-        <!-- Mis Gifos -->
         <section class="misGifos" id="misGifos">
             <section class="misGifos-section">
                 <div class="misGifos-container">
@@ -131,7 +117,6 @@
             </section>
         </section>
                 
-        <!-- Slider de Gifos -->
         <section class="carousel" id="carousel">
             <h2>Trending GIFOS</h2>
             <p>Mira los últimos GIFOS de nuestra comunidad</p>
@@ -144,7 +129,6 @@
             </div>
         </section>
 
-        <!-- Create Gifos -->
         <section class="createGifos" id="createGifos">
             <div class="createGifos-container">
 
@@ -163,13 +147,17 @@
                             </div>
                             <div class="video_cointainer" id="video_cointainer">
                                 <video id="window_video" class="window_video" autoplay></video>
-                                <img id="window_preview" class="window_preview">
+                                <img id="window_preview" class="window_preview" src="./assets/" alt="">
                                 <div class="upload_img" id="upload_img">
+                                        <div class="icons-upload">
+                                            <img src="./assets/icon-download.svg" id="btnDowloadGif" alt="">
+                                            <img id="linkMyGif" class="img2" src="./assets/icon-link.svg" alt="">
+                                        </div>
                                     <img src="./assets/ok.svg" alt="">
                                     <p>GIFO subido con éxito</p>
                                 </div>
                                 <div id="uploading_img" class="uploading_img">
-                                    <img src="./assets/loader.svg">
+                                    <img src="./assets/loader.svg" alt="">
                                     <p>Estamos subiendo tu Gifo</p>
                                 </div>
                             </div>           
@@ -197,7 +185,6 @@
                 <div class="container-bottom">
                     <div class="createGifos-bottom">
                         <div class="createGifos-bars"></div>
-                        <!-- <div class="createGifos-movie"></div> -->
                     </div>
                     <div class="container-btn" id="container_btn">
                         <a class="btn-create" id="btn_start">COMENZAR</a>
@@ -215,7 +202,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-social">
             <p>Compartir en:</p>
@@ -230,7 +216,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="./scripts/script.js"></script>
     <script src="./scripts/search.js"></script>
     <script src="./scripts/gifClass.js"></script>
