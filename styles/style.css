@@ -134,7 +134,7 @@ header .full-menu ul li a {
   text-decoration: none;
 }
 
-header .full-menu ul span {
+header .full-menu ul .span {
   opacity: 0.5;
   width: 41px;
   border-bottom: 1px solid #ffffff;
@@ -216,12 +216,20 @@ main .principal-section .principal-container .principal-container-input a {
   z-index: 200;
   /* position: relative;
                     margin-top: -36px; */
+  /* .search{
+                        height: 20px;
+                    } */
 }
 
 main .principal-section .principal-container .principal-container-input a img {
   cursor: pointer;
   height: 20px;
   width: 20px;
+}
+
+main .principal-section .principal-container .principal-container-input a .close {
+  display: none;
+  padding: 2px;
 }
 
 main .principal-section .principal-container .suggestion-container {
@@ -634,6 +642,7 @@ main .carousel .slick-list .slick-track .slick .overlay-slider .icon-overlay-sli
   background: #ffffff;
   opacity: 0.7;
   margin: 5px;
+  cursor: pointer;
 }
 
 main .carousel .slick-list .slick-track .slick .overlay-slider .text-overlay-slider {
@@ -1361,21 +1370,53 @@ main .createGifos .createGifos-container .container-top .container-createGifos-b
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content: center; */
   width: 630px;
   height: 330px;
   background: #572ee599;
   opacity: 1;
   -ms-flex-line-pack: center;
       align-content: center;
+  /* .icons-container-upload{
+                                    background: #50E3C2; */
+  /* } */
 }
 
 main .createGifos .createGifos-container .container-top .container-createGifos-box .createGifos-box .video_cointainer .upload_img p {
   color: #ffffff;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+
+main .createGifos .createGifos-container .container-top .container-createGifos-box .createGifos-box .video_cointainer .upload_img .icons-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+main .createGifos .createGifos-container .container-top .container-createGifos-box .createGifos-box .video_cointainer .upload_img .icons-upload img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #ffffff;
+  opacity: 0.7;
+  margin: 5px;
+}
+
+main .createGifos .createGifos-container .container-top .container-createGifos-box .createGifos-box .video_cointainer .upload_img .icons-upload img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+main .createGifos .createGifos-container .container-top .container-createGifos-box .createGifos-box .video_cointainer .upload_img .icons-upload .img2 {
+  padding: 5px;
 }
 
 main .createGifos .createGifos-container .container-top .container-createGifos-box .container-createGifos-bottom {
@@ -1587,6 +1628,14 @@ footer .footer-copy {
     background-color: inherit;
     -webkit-transition: inherit;
     transition: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* div{ */
+    /*  } */
   }
   header .full-menu ul {
     -webkit-box-orient: horizontal;
@@ -1599,7 +1648,7 @@ footer .footer-copy {
     font-size: 13px;
     font-weight: bold;
   }
-  header .full-menu ul .add {
+  header .full-menu .add {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1684,11 +1733,11 @@ footer .footer-copy {
   header .full-menu ul li a:active {
     color: #9CAFC3;
   }
-  header .full-menu ul .add:hover {
+  header .full-menu div .add:hover {
     background: #572EE5;
     background-image: url(../assets/CTA-crear-gifo-hover.svg);
   }
-  header .full-menu ul .add:active {
+  header .full-menu div .add:active {
     background: #9CAFC3;
     background-image: url(../assets/CTA-crear-gifo-active.svg);
   }
