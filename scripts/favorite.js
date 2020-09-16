@@ -7,8 +7,6 @@ let favoritesLimit = 100;
 const addFavorite = (id) => {
 	console.log('el evento a la escucha funciona');
 	let button = event.target;
-	// let atribute = button.getAttribute('src');
-
 	button.src = './assets/icon-fav-active.svg';
 	button.style.padding = '6px';
 

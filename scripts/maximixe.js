@@ -47,9 +47,7 @@ const maximixeGif = (gif) => {
         </div>
     </div>`;
 	modalContainer.insertAdjacentHTML('beforeend', template);
-    // modal.classList.add('modal--show');
     modal.style.display = 'Flex';
-	/* body.style.overflow = 'hidden'; */
 	let button = document.getElementById('close-modal');
 	button.addEventListener('click', () => {
 		closeModal();
@@ -57,7 +55,5 @@ const maximixeGif = (gif) => {
 };
 
 const closeModal = () => {
-    // modal.classList.remove('modal--show');
     modal.style.display = 'none';
-	/* body.removeAttribute('style'); */
 };

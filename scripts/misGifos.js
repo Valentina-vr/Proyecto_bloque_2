@@ -1,7 +1,7 @@
 let misGifos_render = document.getElementById('misGifos_render');
 let misGifos_empty = document.getElementById('misGifos_empty');
 let misGifos_render_container = document.getElementById('misGifos_render_container');
-//renderizado de misGifos
+
 function creaMisGifos (){
     if(localStorage.getItem('misGifos') == null){
         misGifos_empty.hidden=false;
